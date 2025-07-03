@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: zent-shop
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: mongodb://mongo:gRojCTuWgNHEmvAmhyWQVEWFNFoNdfop@trolley.proxy.rlwy.net:50036
+        value: mongodb+srv://اسم_المستخدم:كلمة_المرور@اسم_المجموعة.mongodb.net/dbname
+      - key: SESSION_SECRET
+        value: ZENTSHOP_2025_SECRE
